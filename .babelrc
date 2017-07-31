@@ -1,0 +1,24 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "ie": 9,
+        "uglify": true
+      },
+      "useBuiltIns": false,
+      "modules": false,
+      "loose": true
+    }],
+    "stage-0"
+  ],
+  "plugins": [
+    ["transform-object-rest-spread", { "useBuiltIns": true }]
+  ],
+  "env": {
+    "cjs": {
+      "plugins": [
+        ["transform-es2015-modules-commonjs", { "loose": true }]
+      ],
+    }
+  }
+}
