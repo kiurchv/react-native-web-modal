@@ -1,5 +1,7 @@
 import { Component, createElement } from "react";
 
+import Portal from "./Portal";
+
 export default class Modal extends Component {
   static displayName = "Modal";
 
@@ -64,7 +66,11 @@ export default class Modal extends Component {
 
     const style = { ...baseStyle, ...animationStyle };
 
-    return createElement("div", { style, children });
+    return createElement(
+      Portal,
+      null,
+      createElement("div", { style, children })
+    );
   }
 
   handleShow() {

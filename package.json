@@ -1,6 +1,6 @@
 {
   "name": "react-native-web-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Universal Modal component for React Native and web",
   "main": "lib/index.web.js",
   "module": "es/index.web.js",
@@ -21,6 +21,7 @@
   },
   "peerDependencies": {
     "react": "^15.0.0",
+    "react-dom": "^15.0.0",
     "react-native": "^0.x"
   },
   "scripts": {
