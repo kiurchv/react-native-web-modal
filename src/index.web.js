@@ -44,6 +44,19 @@ export default class Modal extends Component {
       }
     };
 
+    const fadeStyles = {
+      hidden: {
+        opacity: 0,
+        visibility: 'hidden',
+        transition: 'all 300ms ease-in-out'
+      },
+      visible: {
+        opacity: 1,
+        visibility: 'visible',
+        transition: 'all 300ms ease-in-out'
+      }
+    };
+    
     const slideStyles = {
       hidden: {
         transform: "translateY(100%)",
@@ -57,7 +70,7 @@ export default class Modal extends Component {
 
     const animationStyles = {
       none: displayStyles,
-      fade: displayStyles,
+      fade: fadeStyles,
       slide: slideStyles
     };
 
